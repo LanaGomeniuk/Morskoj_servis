@@ -452,20 +452,16 @@ ul {
     margin-bottom: 73px;
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contact-information {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-}
-
-.map {
-    padding: 0;
-    margin: 0;
-    max-width: 610px;
-    max-height: 360px;
-    background-color: yellow;
-    font-size: 45px;
-    text-align: center;
 }
 
 .info-title {
@@ -474,13 +470,7 @@ ul {
     margin-bottom: 19px;
 }
 
-.information-contact-list {
-    position: relative;
-    margin-bottom: 36px;
-}
-
-.information-cont {
-    font-size: 16px;
+.information-cont:not(:last-child) {
     margin-bottom: 17px;
 }
 
@@ -495,7 +485,7 @@ ul {
     width: 18.5px;
     height: 18.5px;
     top: 50%;
-    left: 1.75px;
+    left: 2px;
     transform: translateY(-50%)
 }
 
@@ -506,13 +496,13 @@ ul {
 
 .information-tel {
     font-size: 22px;
-    margin-left: 17.25px;
+    margin-left: 17px;
 }
 
 .information-email-name {
     text-decoration: none;
     color: black;
-    margin-left: 31.5px;
+    margin-left: 31px;
 }
 
 .information-email {
