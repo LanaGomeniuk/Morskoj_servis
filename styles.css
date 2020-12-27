@@ -35,6 +35,16 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: #07A7EB;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -388,10 +398,10 @@ ul {
     position: absolute;
     content: "";
     background-image: url(./images/origin.svg);
-    width: 11.25px;
-    height: 12.75px;
+    width: 12px;
+    height: 12px;
     top: 50%;
-    left: 20.75px;
+    left: 21px;
     transform: translateY(-50%)
 }
 
@@ -399,8 +409,8 @@ ul {
     position: absolute;
     content: "";
     background-image: url(./images/name.svg);
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     top: 50%;
     left: 18.5px;
     transform: translateY(-50%)
@@ -498,19 +508,102 @@ ul {
 }
 
 .information-tel {
-    color: black;
-    text-decoration: none;
     font-size: 22px;
     margin-left: 17px;
 }
 
 .information-email-name {
-    text-decoration: none;
-    color: black;
     margin-left: 32px;
 }
 
 .information-email {
     background-image: url(./images/mail_info.svg);
     background-repeat: no-repeat;
+}
+
+.footer {
+    background: #E9F8FF;
+    background-size: cover;
+    padding: 53px 0 35px;
+    margin: 0 auto;
+}
+
+.footer-one {
+    display: flex;
+    justify-content: space-around;
+   /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    border-bottom: 1px solid #95CEE7 ;
+    padding-bottom: 50px;
+    background-size: 100%;
+}
+
+.for-clients-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.for-clients {
+    margin-bottom: 15px;
+}
+
+.footer-socmedia-title {
+    margin-top: 33px;
+}
+
+.socmedia-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120px;
+}
+
+.footer-contacts {
+    position: relative;
+    padding-left: 37px;
+}
+
+.footer-contacts:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.footer-tel::before {
+    position: absolute;
+    content: "";
+    background-image: url(./images/tel.svg);
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-adress::before {
+    position: absolute;
+    content: "";
+    background-image: url(./images/origin.svg);
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-botton {
+    padding: 19px 65px;
+    margin-top: 29px;
+}
+
+.footer-two {
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-more-item {
+    display: inline;
+}
+
+.footer-more-item:not(:first-child) {
+    margin-left: 35px;
 }
