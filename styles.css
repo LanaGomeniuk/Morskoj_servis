@@ -133,7 +133,7 @@ ul {
 
 /* MAin */
 .hero {
-    background-position: right 0;
+    background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 76px 0 110px;
@@ -362,7 +362,7 @@ ul {
     max-width: 1160px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 9px 40px;
 }
 
@@ -544,27 +544,43 @@ ul {
     margin-bottom: 25px;
 }
 
-.for-clients {
+.for-clients:not(:last-child) {
     margin-bottom: 15px;
 }
 
-.footer-socmedia-title {
-    margin-top: 33px;
+.worktime-list {
+    margin-bottom: 33px;
+}
+
+.socmedia-list-title {
+    white-space: nowrap;
+    width: 100%;
 }
 
 .socmedia-list {
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
-    max-width: 120px;
+}
+
+.socmedia-list-icon:not(:last-child) {
+    margin-right: 19px;
 }
 
 .footer-contacts {
     position: relative;
-    padding-left: 37px;
+}
+
+.contacts-list li:nth-last-child(2) {
+    margin-bottom: 33px;
 }
 
 .footer-contacts:not(:last-child) {
     margin-bottom: 15px;
+    max-width: 240px;
+}
+
+.footer-tel {
+    padding-left: 37px;
 }
 
 .footer-tel::before {
@@ -578,6 +594,10 @@ ul {
     transform: translateY(-50%);
 }
 
+.footer-adress {
+    padding-left: 37px;
+} 
+
 .footer-adress::before {
     position: absolute;
     content: "";
@@ -589,9 +609,8 @@ ul {
     transform: translateY(-50%);
 }
 
-.footer-botton {
+.footer-button {
     padding: 19px 65px;
-    margin-top: 29px;
 }
 
 .footer-two {
@@ -604,6 +623,6 @@ ul {
     display: inline;
 }
 
-.footer-more-item:not(:first-child) {
-    margin-left: 35px;
+.footer-more-item:not(:last-child) {
+    margin-right: 35px;
 }
