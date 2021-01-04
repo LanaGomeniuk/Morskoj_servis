@@ -61,14 +61,14 @@ ul {
 }
 
 .title {
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
     font-weight: 400;
     color: #000000;
 }
 
 .button {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     outline: none;
     border: none;
@@ -126,7 +126,7 @@ ul {
 }
 
 .language-value {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 20px;
     text-align: center;
 }
@@ -151,12 +151,12 @@ ul {
     line-height: 66px;
     margin-bottom: 44px;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #FFFFFF;
 }
 
 .hero-list {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 80px;
 }
 
@@ -279,7 +279,7 @@ ul {
 
 .services-item-title {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-bottom: 10px;
 }
 
@@ -306,13 +306,12 @@ ul {
 
 .about-title {
     margin-bottom: 26px;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 48px;
     font-weight: normal;
 }
 
 .about-detail {
-    font-size: 16px;
     line-height: 22px;
     opacity: 0.8;
     margin-bottom: 25px;
@@ -354,7 +353,7 @@ ul {
 .partners-title {
     text-align: center;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-bottom: 60px;
 }
 
@@ -478,7 +477,7 @@ ul {
 
 .info-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 19px;
 }
 
@@ -508,7 +507,7 @@ ul {
 }
 
 .information-tel {
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-left: 17px;
 }
 
@@ -520,6 +519,8 @@ ul {
     background-image: url(./images/mail_info.svg);
     background-repeat: no-repeat;
 }
+
+/* Footer */
 
 .footer {
     background: #E9F8FF;
@@ -539,7 +540,7 @@ ul {
 }
 
 .for-clients-title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     margin-bottom: 25px;
 }
@@ -625,4 +626,20 @@ ul {
 
 .footer-more-item:not(:last-child) {
     margin-right: 35px;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 1370px) {
+
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 92%;
+    }
+
+    .hero {
+        background-position: left;
+    }
 }
