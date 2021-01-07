@@ -74,7 +74,7 @@
     <!-- MAin -->
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container hero-container">
                 <h1 class="hero-title">Оптимизируем логистику
                 Вашего бизнеса!</h1>
                 <ul class="hero-list">
@@ -195,29 +195,81 @@
             <div class="container information-container">
                 <h2 class="title information-title">Контактная информация</h2>
                 <div class="contact-information">
-                    <div class="map">
-                        <p>I'm a map</p>
-                        <p>I'm a map</p>
-                    </div>
-                    <div class="contact-info">
-                        <h3 class="info-title information-adress">Адрес компании</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43962.14275380548!2d30.700002556101165!3d46.47575870610196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9135ad2d11b60262!2z0JzQntCg0KHQmtCe0Jkg0KHQldCg0JLQmNChINCj0JrQoNCQ0JjQndCr!5e0!3m2!1sru!2slt!4v1609001346516!5m2!1sru!2slt"
+                        width="610" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                    <div class="information-cont">
                         <ul class="information-contact-list">
-                            <li class="information-cont information-name">ул. Щеголева, 14, Одесса, Одесская область, 65000</li>
+                            <li><h3 class="info-title information-adress">Адрес компании</h3></li>
+                            <li class="information-name">ул. Щеголева, 14, Одесса, Одесская область, 65000</li>
                         </ul>
-                        <h3 class="info-title">Телефоны</h3>
                         <ul class="information-contact-list">
-                            <li class="information-cont information-item"><span class="information-tel">+38 063 3522222</span> (Направление импорта)</li>
-                            <li class="information-cont information-item"><span class="information-tel">+38 097 3622145</span> (Направление экспорта)</li>
-                            <li class="information-cont information-item"><span class="information-tel">+38 050 8905678</span> (Общая информация)</li>
+                            <li><h3 class="info-title">Телефоны</h3></li>
+                            <li class="information-item"><a href="tel:+38 063 3522222" class="information-tel">+38 063 3522222</a> (Направление импорта)</li>
+                            <li class="information-item"><a href="tel:+38 097 3622145" class="information-tel">+38 097 3622145</a> (Направление экспорта)</li>
+                            <li class="information-item"><a href="tel:+38 050 8905678" class="information-tel">+38 050 8905678</a> (Общая информация)</li>
                         </ul>
-                        <h3 class="info-title">Email</h3>
                         <ul class="information-contact-list">
-                            <li class="information-cont information-email"><a class="information-email-name" href="mailto:clients_info@msutrader.com">clients_info@msutrader.com</a></li>
+                            <li><h3 class="info-title">Email</h3></li>
+                            <li class="information-email"><a class="information-email-name" href="mailto:clients_info@msutrader.com">clients_info@msutrader.com</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-one">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="./images/footer-logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="for-clients-list">
+                        <li>
+                            <h3 class="for-clients-title">Клиентам</h3>
+                        </li>
+                        <li class="for-clients"><a href="#" class="for-clients-item">Услуги</a></li>
+                        <li class="for-clients"><a href="#" class="for-clients-item">О компании</a></li>
+                        <li class="for-clients"><a href="#" class="for-clients-item">Партнеры</a></li>
+                        <li class="for-clients"><a href="#" class="for-clients-item">Новости</a></li>
+                        <li class="for-clients"><a href="#" class="for-clients-item">Контакты</a></li>
+                    </ul>
+                    <div class="footer-worktime-socmedia">
+                        <ul class="worktime-list">
+                            <li>
+                                <h3 class="for-clients-title">Время работы</h3>
+                            </li>
+                            <li class="worktime-item for-clients">Пн-Пт - 09:00-18:00</li>
+                            <li class="worktime-item for-clients">Сб-Вс - выходной</li>
+                        </ul>
+                        <ul class="socmedia-list">
+                            <li class="socmedia-list-title"><h3 class="for-clients-title">Мы в соцсетях</h3></li>
+                            <li class="socmedia-list-icon"><a href="#"><img src="./images/facebook.svg" alt="facebook"></a></li>
+                            <li class="socmedia-list-icon"><a href="#"><img src="./images/youtube.svg" alt="youtube"></a></li>
+                            <li class="socmedia-list-icon"><a href="#"><img src="./images/twitter.svg" alt="twitter"></a></li>
+                        </ul>
+                    </div>
+                    <ul class="contacts-list">
+                        <li>
+                            <h3 class="for-clients-title">Контакты</h3>
+                        </li>
+                        <li class="footer-contacts"><a class="footer-tel" href="tel:+38 063 3522222">+38 063 3522222</a>
+                        </li>
+                        <li class="footer-contacts footer-adress">ул. Щеголева, 14, Одесса, Одесская область, 65000</li>
+                        <li class="footer-contacts"><button class="button footer-button">запрос ставки</button></li>
+                    </ul>
+                </div>
+                <div class="footer-two">
+                    <p class="copyright">&copy; 2020 МСУ. Логистические услуги.</p>
+                    <ul class="footer-two-more">
+                        <li class="footer-more-item"><a href="#">Стать нашим партнером</a></li>
+                        <li class="footer-more-item"><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
 </body>
 </html>
