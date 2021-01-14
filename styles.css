@@ -573,10 +573,6 @@ ul {
     width: 100%;
 }
 
-.socmedia-list-icon:not(:last-child) {
-    
-}
-
 .footer-contacts {
     position: relative;
 }
@@ -642,7 +638,6 @@ ul {
 /* responsive design */
 
 @media screen and (max-width: 1370px) {
-
     html {
         font-size: 14px;
     }
@@ -716,19 +711,28 @@ ul {
         padding: 0 0 0 25px;
     }
 
+    .information-title {
+        margin-bottom: 35px;
+    }
+
     .contact-information {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 30px;
         place-items: center;
     }
 
-     .information-cont {
+    .information-cont {
         grid-row: 1/2;
         justify-content: space-evenly;
     }
 
+    .information-email {
+        padding-bottom: 10px;
+    }
+
     .for-clients-list {
         width: 35%;
+        text-align: center;
     }
 
     .footer-worktime-socmedia{
@@ -736,17 +740,18 @@ ul {
         margin-bottom: 30px;
     }
 
+    .worktime-list {
+        text-align: center;
+    }
+
     .socmedia-list {
         grid-column-gap: 10px;
         width: fit-content;
-    }
-   
-    .information-title {
-        margin-bottom: 35px;
+        margin: 0 auto;
     }
 
-    .information-email {
-        padding-bottom: 10px;
+    .for-clients-title {
+        text-align: center;
     }
 
     .footer-two-more {
@@ -762,7 +767,7 @@ ul {
 
 @media screen and (max-width: 550px) {
     .button {
-        width: 80%;
+        width: 70%;
         padding: 20px 0;
     }
 
@@ -793,19 +798,38 @@ ul {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
+    .about-title {
+        line-height: inherit;
+        font-size: 2rem;
+    }
+
     .button-about {
         font-weight: inherit;
         font-size: 1.125rem;
-        width: 70%;
-        padding: 20px 0;
+        width: 75%;
+        padding: 20px 5px;
     }
+
+    .partners-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .request-form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .request-msg {
+        grid-column: auto;
+    }
+
     .request-btn {
         width: 100%;
+        grid-column: auto;
     }
 
     .information-name {
         padding-left: 25px;
-}
+    }
 
     .information-name::before {
         left: -4px;
@@ -824,6 +848,10 @@ ul {
         width: 170px;
     }
 
+    .worktime-list {
+        white-space: nowrap;
+    }
+
     .footer-button {
         width: 100%;
     }
@@ -831,9 +859,14 @@ ul {
     .footer-two {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .copyright {
         margin-bottom: 5px;
+    }
+
+    .footer-more-item:not(:last-child) {
+        margin: 0 auto 5px;
     }
 }
